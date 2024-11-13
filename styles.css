@@ -1,0 +1,386 @@
+@font-face {
+    font-family: helveticaneuefat;
+    src: url(./fonts/helveticaneuefat.ttf);
+}
+
+@font-face {
+    font-family: helveticaneue;
+    src: url(./fonts/helveticaneue.otf);
+}
+
+.card {
+    background-color: #323232;
+    border: 6px solid #232323;
+    text-align: center;
+    border-radius: 20px;
+    padding: 15px;
+    display: inline-block;
+    width: 250px;
+    height: 375px;
+}
+
+.card-heading, #card-heading {
+    font-size: 60px;
+    background: linear-gradient(to right, #C7EA46, #4CBB17);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    display: inline-block;
+    font-family: helveticaneuefat;
+    z-index: 1;
+}
+
+.card-heading {
+    padding: 0px;
+    font-size: 30px;
+    font-family: helveticaneue;
+}
+
+body, html {
+    padding: 0px;
+    margin: 0px;
+    border: none;
+    font-family: helveticaneue;
+    overflow-x: hidden;
+}
+
+#card-part {
+    text-align: center;
+    z-index: -9;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(#343434, black, black);
+    top: 100vh;
+}
+
+#thing {
+    height: calc(200vh + 20px);
+    width: 1px;
+    position: absolute;
+    z-index: -20;
+}
+
+p {
+    color: white;
+}
+
+footer {
+    background-color: black;
+    width: 100%;
+    height: 70px;
+    text-align: center;
+    z-index: 5;
+    transform: translateY(200vh);
+}
+
+a {
+    color: #878787;
+    cursor: pointer;
+}
+
+a:hover {
+    color: darkgray;
+}
+
+#bios {
+    float: right;
+    padding: 5px;
+}
+
+#images {
+    background-color: #434343;
+    border: 6px solid #232323;
+    border-radius: 30px;
+    float: right;
+    position: relative;
+    transform: translate(-12vw, -160px);
+}
+
+#top-part {
+    width: 100%;
+    height: 100vh;
+    border: none;
+    background-image: linear-gradient(#121212, #262626, #2b2b2b, #303030, #343434, #343434, #343434, #343434, #343434, #343434, #343434, #343434, #343434, #343434, #343434, #343434, #343434);
+    position: absolute;
+    z-index: -10;
+}
+
+/* BIG TEXT */
+
+#gradient1 {
+    font-size: 100px;    
+    background: linear-gradient(to right, #C7EA46, #6BC623);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    display: inline-block;
+    font-family: helveticaneuefat;
+    z-index: 1;
+    transform: translate(15vw, 5vw);
+}
+
+#gradient2 {
+    font-size: 100px;
+    background: linear-gradient(to right, #8AD22F, #4CBB17);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    display: inline-block;
+    font-family: helveticaneuefat;
+    z-index: 1;
+    transform: translate(calc(-90px + 15vw), calc(95px + 5vw));
+}
+
+#gradientoutline1, #gradientoutline2 {
+    font-family: helveticaneuefat;
+    font-size: 100px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    display: inline-block;
+    z-index: -4;
+    background: transparent;
+    -webkit-text-stroke: 2px yellow;
+    position: relative;
+    transform: translate(calc(-465px + 15vw), calc(-8px + 5vw));
+}
+
+#gradientoutline2 {
+    transform: translate(calc(-555px + 15vw), calc(84px + 5vw));
+}
+
+/* NAVIGATION BAR CSS */
+
+#gradient3 {
+    font-family: helveticaneuefat;
+    transform: translate(2vw, -8px);
+    background: linear-gradient(to right, #C7EA46, #4CBB17);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    display: inline-block;
+    font-size: 30px;
+}
+
+#logonavbar {
+    width: 50px;
+    padding-top: 10px;
+    transform: translate(2vw, 0%);
+}
+
+.container {
+    width: 95%;
+    height: 50px;
+    margin: 0 auto;
+    font-weight: bold;
+    overflow: hidden;
+}
+  
+header {
+    background-color: #121212;
+}
+
+header::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.logo {
+    float: left;
+    padding: 10px 0;
+}
+
+nav {
+    float: right;
+    transform: translate(-5vw, 0px);
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+  
+nav li {
+    display: inline-block;
+    margin-left: 60px;
+    padding-top: 23px;
+    padding-bottom: 23px;
+    position: relative;
+    float: right;
+}
+  
+nav a {
+    color: #6BC623;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    float: right;
+}
+  
+nav a:hover {
+    color: #C7EA46;
+}
+  
+nav a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    background-color: #C7EA46;
+    position: absolute;
+    top: 0;
+    width: 0%;
+    transition: all ease-in-out 250ms;
+}
+  
+nav a:hover::before {
+    width: 100%;
+}
+
+
+/* waow glow :3 */
+
+.glow {
+    color: inherit;
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #ffcc00, 0 0 20px #ffcc00, 0 0 25px #ffcc00, 0 0 30px #ffcc00;
+    }
+    to {
+      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #ffeb99, 0 0 20px #ffeb99, 0 0 25px #ffeb99, 0 0 30px #ffeb99;
+    }
+}
+
+/* PROJECTS.HTML SPECIFIC CSS*/
+
+#darkness-div {
+    background-image: linear-gradient(#121212, #434343, #434343, #434343, #434343, #434343);
+    width: 100%;
+    height: 400px;
+    text-align: center;
+    transform: translateY(-1px);
+}
+
+#darkness-img {
+    transform: translate(-150px, 50px);
+    border: 4px solid #BCBCBC;
+    border-radius: 20px;
+}
+
+#darkness-heading {
+    color: white;
+    display: inline;
+    float: right;
+    transform: translate(-185px, 40px);
+    font-family: helveticaneuefat;
+    font-size: 40px;
+}
+
+#darkness-body {
+    float: right;
+    position: sticky;
+    padding: 75px;
+    transform: translateY(-225px);
+}
+
+#flux-div {
+    background-image: linear-gradient(#434343, #343434, #565656, #565656);
+    width: 100%;
+    height: 400px;
+    text-align: center;
+    transform: translateY(-2px);
+}
+
+#flux-img {
+    transform: translate(550px, 50px);
+    float: right;
+    border: 4px solid #bcbcbc;
+    border-radius: 20px;
+}
+
+#flux-heading {
+    color: white;
+    display: inline;
+    float: left;
+    transform: translate(225px, -225px);
+    font-family: helveticaneuefat;
+    font-size: 40px;
+}
+
+#flux-body {
+    float: left;
+    position: sticky;
+    padding: 0px;
+    transform: translate(-80px, -100px);
+}
+
+#sprig-div {
+    width: 100%;
+    height: 400px;
+    text-align: center;
+    background-image: linear-gradient(#565656, black);
+    transform: translateY(-24px);
+}
+
+#sprig-img {
+    border: 4px solid #BCBCBC;
+    border-radius: 20px;
+    float: left;
+    transform: translate(50px, -20px);
+}
+
+#sprig-heading {
+    color: white;
+    font-family: helveticaneuefat;
+    display: inline-block;
+    transform: translateY(40px);
+}
+
+#sprig-body {
+    display: inline-block;
+    transform: translateY(80px);
+}
+
+/* EXPERIENCE.HTML SPECIFIC CSS*/
+
+#top-part-exp {
+    width: 100%;
+    text-align: center;
+    background: linear-gradient(#121212, #434343, #434343, #434343, #434343, #434343);
+    height: 450px;
+}
+
+#middle-part-exp {
+    width: 100%;
+    text-align: center;
+    background: linear-gradient(#434343, #545454, #545454, #565656, #565656, black, black);
+    height: 500px;
+}
+
+.heading {
+    color: white;
+    font-family: helveticaneuefat;
+    background: linear-gradient(to right, yellow, lime);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* CONTACT.HTML ONLY CSS! :D */
+
+#contact-cards {
+    width: 100vw;
+    height: 600px;
+    text-align: center;
+    align-content: center;
+    overflow: hidden;
+    background-image: linear-gradient(#121212, #343434, #434343, #454545, #454545, #454545, #454545, #454545, #454545,#454545,#454545,#454545, #212121, black, black);
+}
